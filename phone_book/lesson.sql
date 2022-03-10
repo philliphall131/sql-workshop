@@ -22,7 +22,13 @@ where phone='579-804-9800';
 
 -- Exercise 1:
 --   1.1 Find phone number for Lauri Abshire.
+SELECT phone
+  FROM contacts
+  WHERE name = 'Lauri Abshire';
 --   1.2 Find who has the phone number 363-350-4983.
+SELECT name
+  FROM contacts
+  WHERE phone = '363-350-4983';
 
 -- Now what happens if we only know someone's first name? The % is the
 -- wildcard character for a LIKE pattern. It matches any number of any character.
